@@ -21,15 +21,15 @@ This project simulates a backend logic for an e-commerce store where different t
 ## 💻 Usage Example
 
 ```java
-public static void main(String[] args) {
+public static void Test1(String[] args) {
     ShoppingCart cart = new ShoppingCart();
 
-    // Polymorphism in action: Adding different subclasses to the same list
+    
     Product laptop = new Technology("Gaming Laptop", 1500.0, "BrandX", true);
     Product tShirt = new Clothing("Cotton T-Shirt", 20.0, "L", "Cotton");
 
-    cart.addProduct(laptop); // Automatically calculates tax
-    cart.addProduct(tShirt); // Automatically applies discount
+    cart.addProduct(laptop); 
+    cart.addProduct(tShirt);
 
     System.out.println("Total Cart Amount: " + cart.calculateTotal());
 }
